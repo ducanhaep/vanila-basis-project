@@ -47,6 +47,7 @@ Variables
   --ff-primary: "Roboto", sans-serif;
   --ff-secondary: "Open Sans", sans-serif;
   --transition: all 0.3s linear;
+  --transition1: all 0.3s ease-in-out;
   --spacing: 0.25rem;
   --radius: 0.5rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -364,13 +365,16 @@ footer p {
   place-items: center;
   border-radius: var(--radius);
   color: var(--clr-white);
-  animation: bounce 2s ease-in-out infinite;
+  /* animation: bounce 2s ease-in-out infinite; */
   visibility: hidden;
   z-index: -100;
+  transform: translateY(200%);
+  transition: var(--transition1)
 }
 .show-link {
   visibility: visible;
   z-index: 100;
+  transform: translateY(0)
 }
 
 @keyframes bounce {

@@ -26,7 +26,7 @@ const giveaway = document.querySelector(".giveaway");
 const deadline = document.querySelector(".deadline");
 const items = document.querySelectorAll(".deadline-format h4");
 
-let futureDate = new Date(2020, 8, 12, 7, 30, 0);
+let futureDate = new Date(2021, 2, 12, 7, 30, 0);
 
 const year = futureDate.getFullYear();
 const date = futureDate.getDate();
@@ -82,4 +82,4 @@ function getRemaindingTime() {
 
 let countdown = setInterval(getRemaindingTime, 1000);
 
-getRemaindingTime();
+// getRemaindingTime();
